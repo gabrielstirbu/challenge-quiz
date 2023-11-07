@@ -19,8 +19,35 @@ function startQuiz() {
     document.getElementById("questions").classList.remove("hide");
     // Start the timer
     startTimer();
+    // Load the first question
+    loadQuestion(currentQuestion[i]);
 }
 
+// Function to load a question
+function loadQuestion(i) {
+    questionTitle.textContent = questions[i].question;
+    choicesDiv.innerHTML = "";
+
+    for (let i = 0; i < questions[i].answers.length; i++) {
+        const choiceButton = document.createElement("button");
+        choiceButton.textContent = questions[i].answers[i];
+        choiceButton.addEventListener("click", handleAnswerClick);
+        choicesDiv.appendChild(choiceButton);
+    }
+}
+
+// Function to start the timer
+function startTimer() {
+    timerInterval = setInterval(function () {
+      timeLeft--;
+      timeSpan.textContent = timeLeft;
+  
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        endQuiz();
+      }
+    }, 1000);
+  }
 
 // THEN a timer starts and I am presented with a question
 // WHEN I answer a question
