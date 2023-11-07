@@ -54,6 +54,19 @@ function startTimer() {
     }, 1000);
 }
 
+
+// Play the correct sound
+function playCorrectSound() {
+    var correctSound = document.getElementById("correctSound");
+    correctSound.play();
+}
+
+// Play the incorrect sound
+function playIncorrectSound() {
+    var incorrectSound = document.getElementById("incorrectSound");
+    incorrectSound.play();
+}
+
 // Function to handle user's answer click
 function handleAnswerClick(event) {
     var selectedAnswer = event.target.textContent;
@@ -63,13 +76,16 @@ function handleAnswerClick(event) {
         // Correct answer
         score += 1;
         feedbackDiv.textContent = "Correct!";
+        playCorrectSound(); // Play the correct sound
     } else {
         // Incorrect answer
         timeLeft -= 1;
         feedbackDiv.textContent = "Incorrect!";
+        playIncorrectSound(); // Play the incorrect sound
     }
 
     feedbackDiv.classList.remove("hide");
+
 
     // Move to the next question or end the quiz
     currentQuestionIndex++;
