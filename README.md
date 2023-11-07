@@ -36,6 +36,10 @@ Link: https://gabrielstirbu.github.io/challenge-quiz/
 
 
 ## Screenshots
+![Screenshot 2023-11-07 at 21 41 51](https://github.com/gabrielstirbu/challenge-quiz/assets/145403373/2337d6d1-16b5-43df-b283-02c7a4c37a5e)
+![Screenshot 2023-11-07 at 21 42 45](https://github.com/gabrielstirbu/challenge-quiz/assets/145403373/d12ae191-0b4f-4481-b22c-3396ed583a59)
+![Screenshot 2023-11-07 at 21 42 54](https://github.com/gabrielstirbu/challenge-quiz/assets/145403373/bf3cfe7a-40eb-4126-8ab4-66edf0adbefa)![Screenshot 2023-11-07 at 21 43 07](https://github.com/gabrielstirbu/challenge-quiz/assets/145403373/aaf99a78-2d98-4a37-8d0a-7df727b5c603)
+
 
 
 ## Author
