@@ -95,6 +95,9 @@ function handleAnswerClick(event) {
         endQuiz();
     }
 }
+// Event for submit button
+submitButton.addEventListener("click", handleSubmit);
+
 
 // Function to end the quiz
 function endQuiz() {
